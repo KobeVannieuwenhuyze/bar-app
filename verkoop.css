@@ -1,0 +1,107 @@
+figure {
+    display: inline-block;
+    margin: 10px;
+}
+
+body {
+    color: white;
+}
+
+body>nav>a>img {
+    width: 106%;
+    height: auto;
+    margin: -10px -10px 6px;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(7, 7, 73), rgb(40, 50, 234));
+    padding: 10px;
+    margin: -10px;
+    padding-top: 30px;
+    border: none;
+}
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+h4 {
+    margin: 0px;
+    text-align: center;
+    font-size: 22px;
+}
+
+figure img {
+    width: 76px;
+    height: 76px;
+    border-radius: 10px;
+}
+
+fieldset {
+    margin-bottom: 10px;
+    color: white;
+    border-color: white;
+    text-align: center;
+}
+
+fieldset figcaption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: orangered;
+    height: 20px;
+    width: 20px;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: absolute;
+}
+
+div > figcaption {
+    position: fixed;
+    bottom: 4%;
+    left: 3%;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    background-color: orangered;
+    height: 60px;
+    width: 40px;
+    font-size: 25px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+fieldset span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(205, 9, 9);
+    height: 20px;
+    width: 20px;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    position: absolute;
+    margin-left: 56px;
+    font-size: 25px;
+}
+
+div > span {
+    position: fixed;
+    bottom: 4%;
+    right: 52%;
+    text-align: center;
+    line-height: 60px;
+    background-color: rgb(205, 9, 9);
+    color: white;
+    height: 60px;
+    width: 40px;
+    font-size: 25px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
