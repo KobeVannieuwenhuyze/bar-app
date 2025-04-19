@@ -14,7 +14,10 @@ for (let label in artiekels_prijs) {
 var prijs = 0;
   
 
+if (path.includes("index.html")) {
+    // Verschillende artiekelen
 
+console.log("test");
 const bockor = document.getElementById("bockor");
 const carlsberg = document.getElementById("carlsberg");
 const omer = document.getElementById("omer");
@@ -147,6 +150,7 @@ nieuw.onclick = function () {
     window.location = 'index.html';
 }
 
+}
 
 // Functies voor nummmering
 function nummering(soort, moederelement) {
@@ -207,10 +211,4 @@ function initialisatie (soort, moederelement)
         figurecaption.innerHTML = artiekels_aantal[soort];
         moederelement.insertBefore(figurecaption, moederelement.children[0]);
     }
-}
-
-if (typeof(Storage) !== "undefined") {
-    console.log("localStorage werkt!");
-} else {
-    console.log("localStorage werkt niet.");
 }
