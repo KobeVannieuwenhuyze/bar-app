@@ -13,11 +13,11 @@ for (let label in artiekels_prijs) {
 }
 var prijs = 0;
   
-console.log("test buiten");
+console.log("Geen winkelwagen opgeslagen.");
 if (path.includes("index.html")) {
     // Verschillende artiekelen
 
-console.log("test");
+console.log("Geen winkelwagen opgeslagen.");
 const bockor = document.getElementById("bockor");
 const carlsberg = document.getElementById("carlsberg");
 const omer = document.getElementById("omer");
