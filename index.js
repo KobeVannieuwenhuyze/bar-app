@@ -210,3 +210,9 @@ function initialisatie (soort, moederelement)
         moederelement.insertBefore(figurecaption, moederelement.children[0]);
     }
 }
+
+if (typeof(Storage) !== "undefined") {
+    console.log("localStorage werkt!");
+} else {
+    console.log("localStorage werkt niet.");
+}
