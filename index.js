@@ -13,7 +13,7 @@ for (let label in artiekels_prijs) {
 }
 var prijs = 0;
   
-
+console.log("test buiten");
 if (path.includes("index.html")) {
     // Verschillende artiekelen
 
