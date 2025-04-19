@@ -1,23 +1,17 @@
+console.log("test");
+
 const path = window.location.pathname;
 
 const artiekels_prijs = { 'bockor': 3, 'carlsberg': 3, 'omer': 5, 'duvel': 5, 'kriek': 3, 'rouge': 4, 'cola': 3, 'colazero': 3, 'fanta': 3, 'icetea': 3, 'platwater': 2, 'spuitwater': 2, 'witglas': 5, 'roseglas': 5, 'roodglas': 5, 'witfles': 18, 'rosefles': 18, 'roodfles': 18, 'cavaglas': 6, 'cavafles': 22, 'chips': 2, 'aperobordje': 4, 'beker/glas': 1, 'beker': -1 };
-var artiekels_aantal = {};
-const params = new URLSearchParams(window.location.search);
-for (const [key, value] of params.entries()) {
-    artiekels_aantal[key] = parseInt(value);
-}
-for (let label in artiekels_prijs) {
-    if (!(label in artiekels_aantal)) {
-        artiekels_aantal[label] = 0;
-    }
-}
+var artiekels_aantal = { 'bockor': 0, 'carlsberg': 0, 'omer': 0, 'duvel': 0, 'kriek': 0, 'rouge': 0, 'cola': 0, 'colazero': 0, 'fanta': 0, 'icetea': 0, 'platwater': 0, 'spuitwater': 0, 'witglas': 0, 'roseglas': 0, 'roodglas': 0, 'witfles': 0, 'rosefles': 0, 'roodfles': 0, 'cavaglas': 0, 'cavafles': 0, 'chips': 0, 'aperobordje': 0, 'beker/glas': 0, 'beker': 0 };
+
 var prijs = 0;
   
-console.log("Geen winkelwagen opgeslagen.");
-if (path.includes("index.html")) {
-    // Verschillende artiekelen
 
-console.log("Geen winkelwagen opgeslagen.");
+
+console.log("test include");
+  
+    // Verschillende artiekelen
 const bockor = document.getElementById("bockor");
 const carlsberg = document.getElementById("carlsberg");
 const omer = document.getElementById("omer");
@@ -103,16 +97,12 @@ berekenen.onclick = function () {
     }
     localStorage.setItem("artiekels_aantal", JSON.stringify(artiekels_aantal));
     let query = '';
-for (let label in artiekels_aantal) {
-    if (artiekels_aantal[label] > 0) {
-        query += `${encodeURIComponent(label)}=${artiekels_aantal[label]}&`;
-    }
+window.location = `betalen.html`;
 }
-query = query.slice(0, -1); // verwijdert laatste &
-window.location = `betalen.html?${query}`;
-}
-}
-else if (path.includes("betalen.html")) {
+
+
+
+if (path.includes("betalen.html")) {
     for (label in artiekels_aantal) {
         prijs += artiekels_aantal[label] * artiekels_prijs[label];
     }
@@ -132,14 +122,7 @@ for (let label in artiekels_aantal) {
 // Code voor koppen
 const wijzigen = document.getElementById("wijzigen");
 wijzigen.onclick = function () {
-    let query = '';
-    for (let label in artiekels_aantal) {
-        if (artiekels_aantal[label] > 0) {
-            query += `${encodeURIComponent(label)}=${artiekels_aantal[label]}&`;
-        }
-    }
-    query = query.slice(0, -1);
-    window.location = `index.html?${query}`;
+    window.location = `index.html`;
 }
 const nieuw = document.getElementById("nieuw");
 nieuw.onclick = function () {
