@@ -2,8 +2,8 @@ console.log("test");
 
 const pagina = document.body.id;
 
-const artiekels_prijs = { 'bockor': 3, 'carlsberg': 3, 'omer': 5, 'duvel': 5, 'kriek': 3, 'rouge': 5, 'cola': 3, 'colazero': 3, 'fanta': 3, 'icetea': 3, 'platwater': 2, 'spuitwater': 2, 'witglas': 5, 'roseglas': 5, 'roodglas': 5, 'witfles': 18, 'rosefles': 18, 'roodfles': 18, 'cavaglas': 6, 'cavafles': 22, 'chips': 2, 'aperobordje': 4, 'beker/glas': 1, 'beker': -1 };
-var artiekels_aantal = { 'bockor': 0, 'carlsberg': 0, 'omer': 0, 'duvel': 0, 'kriek': 0, 'rouge': 0, 'cola': 0, 'colazero': 0, 'fanta': 0, 'icetea': 0, 'platwater': 0, 'spuitwater': 0, 'witglas': 0, 'roseglas': 0, 'roodglas': 0, 'witfles': 0, 'rosefles': 0, 'roodfles': 0, 'cavaglas': 0, 'cavafles': 0, 'chips': 0, 'aperobordje': 0, 'beker/glas': 0, 'beker': 0 };
+const artiekels_prijs = { 'bockor': 3, 'carlsberg': 3, 'omer': 5, 'duvel': 5, 'ypra': 5, 'ypra00': 5, 'kriek': 3, 'rouge': 5, 'cola': 3, 'colazero': 3, 'fanta': 3, 'icetea': 3, 'platwater': 2, 'spuitwater': 2, 'witglas': 5, 'roseglas': 5, 'roodglas': 5, 'witfles': 18, 'rosefles': 18, 'roodfles': 18, 'cavaglas': 6, 'cavafles': 22, 'chips': 2, 'beker/glas': 1, 'beker': -1 };
+var artiekels_aantal = { 'bockor': 0, 'carlsberg': 0, 'omer': 0, 'duvel': 0, 'ypra': 0, 'ypra00': 0, 'kriek': 0, 'rouge': 0, 'cola': 0, 'colazero': 0, 'fanta': 0, 'icetea': 0, 'platwater': 0, 'spuitwater': 0, 'witglas': 0, 'roseglas': 0, 'roodglas': 0, 'witfles': 0, 'rosefles': 0, 'roodfles': 0, 'cavaglas': 0, 'cavafles': 0, 'chips': 0, 'beker/glas': 0, 'beker': 0 };
 artiekels_aantal = JSON.parse(localStorage.getItem("artiekels_aantal")) || artiekels_aantal;
 var prijs = 0;
   
@@ -16,6 +16,8 @@ const bockor = document.getElementById("bockor");
 const carlsberg = document.getElementById("carlsberg");
 const omer = document.getElementById("omer");
 const duvel = document.getElementById("duvel");
+const ypra = document.getElementById("ypra");
+const ypra00 = document.getElementById("ypra00");
 const kriek = document.getElementById("kriek");
 const rouge = document.getElementById("rouge");
 const cola = document.getElementById("cola");
@@ -33,7 +35,6 @@ const roodfles = document.getElementById("roodfles");
 const cavaglas = document.getElementById("cavaglas");
 const cavafles = document.getElementById("cavafles");
 const chips = document.getElementById("chips");
-const aperobordje = document.getElementById("aperobordje");
 const nieuwebeker = document.getElementById("beker/glas");
 const beker = document.getElementById("beker");
 
@@ -42,6 +43,8 @@ initialisatie('bockor', bockor);
 initialisatie('carlsberg', carlsberg);
 initialisatie('omer', omer);
 initialisatie('duvel', duvel);
+initialisatie('ypra', ypra);
+initialisatie('ypra00', ypra00);
 initialisatie('kriek', kriek);
 initialisatie('rouge', rouge);
 initialisatie('cola', cola);
@@ -59,7 +62,6 @@ initialisatie('roodfles', roodfles);
 initialisatie('cavaglas', cavaglas);
 initialisatie('cavafles', cavafles);
 initialisatie('chips', chips);
-initialisatie('aperobordje', aperobordje);
 initialisatie('beker/glas', nieuwebeker)
 initialisatie('beker', beker);
 
@@ -68,6 +70,8 @@ nummering('bockor', bockor);
 nummering('carlsberg', carlsberg);
 nummering('omer', omer);
 nummering('duvel', duvel);
+nummering('ypra', ypra);
+nummering('ypra00', ypra00);
 nummering('kriek', kriek);
 nummering('rouge', rouge);
 nummering('cola', cola);
@@ -85,7 +89,6 @@ nummering('roodfles', roodfles);
 nummering('cavaglas', cavaglas);
 nummering('cavafles', cavafles);
 nummering('chips', chips);
-nummering('aperobordje', aperobordje);
 nummering('beker/glas', nieuwebeker)
 nummering('beker', beker);
 
