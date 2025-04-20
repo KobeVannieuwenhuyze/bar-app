@@ -1,7 +1,7 @@
-
-Dit gebruiken om het aantal artiekels te resetten bij het aanpassen van de lijst
-localStorage.removeItem('artikels_aantal'); // of set naar 0
-let artikels_aantal = 0;
+/*
+Dit gebruiken om het aantal artiekels te resetten bij het aanpassen van de lijst --> in console typen
+localStorage.removeItem('artikels_aantal'); 
+*/
 
 const pagina = document.body.id;
 
