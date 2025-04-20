@@ -1,5 +1,3 @@
-console.log("test");
-
 const pagina = document.body.id;
 
 const artiekels_prijs = { 'bockor': 3, 'carlsberg': 3, 'omer': 5, 'duvel': 5, 'ypra': 5, 'ypra00': 5, 'kriek': 3, 'rouge': 5, 'cola': 3, 'colazero': 3, 'fanta': 3, 'icetea': 3, 'platwater': 2, 'spuitwater': 2, 'witglas': 5, 'roseglas': 5, 'roodglas': 5, 'witfles': 18, 'rosefles': 18, 'roodfles': 18, 'cavaglas': 6, 'cavafles': 22, 'chips': 2, 'beker/glas': 1, 'beker': -1 };
@@ -8,9 +6,7 @@ artiekels_aantal = JSON.parse(localStorage.getItem("artiekels_aantal")) || artie
 var prijs = 0;
   
 
-if (pagina === "index") {
-console.log("test include");
-  
+if (pagina === "index") {  
     // Verschillende artiekelen
 const bockor = document.getElementById("bockor");
 const carlsberg = document.getElementById("carlsberg");
