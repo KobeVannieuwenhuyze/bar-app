@@ -2,7 +2,10 @@ const pagina = document.body.id;
 
 const artiekels_prijs = { 'bockor': 3, 'carlsberg': 3, 'omer': 5, 'duvel': 5, 'ypra': 5, 'ypra00': 5, 'kriek': 3, 'rouge': 5, 'cola': 3, 'colazero': 3, 'fanta': 3, 'icetea': 3, 'platwater': 2, 'spuitwater': 2, 'witglas': 5, 'roseglas': 5, 'roodglas': 5, 'witfles': 18, 'rosefles': 18, 'roodfles': 18, 'cavaglas': 6, 'cavafles': 22, 'chips': 2, 'beker/glas': 1, 'beker': -1 };
 var artiekels_aantal = { 'bockor': 0, 'carlsberg': 0, 'omer': 0, 'duvel': 0, 'ypra': 0, 'ypra00': 0, 'kriek': 0, 'rouge': 0, 'cola': 0, 'colazero': 0, 'fanta': 0, 'icetea': 0, 'platwater': 0, 'spuitwater': 0, 'witglas': 0, 'roseglas': 0, 'roodglas': 0, 'witfles': 0, 'rosefles': 0, 'roodfles': 0, 'cavaglas': 0, 'cavafles': 0, 'chips': 0, 'beker/glas': 0, 'beker': 0 };
-//artiekels_aantal = JSON.parse(localStorage.getItem("artiekels_aantal")) || artiekels_aantal;
+if (JSON.stringify(Object.keys(artiekels_aantal).sort()) === JSON.stringify(Object.keys(JSON.parse(localStorage.getItem("artiekels_aantal"))).sort()))
+{
+  artiekels_aantal = JSON.parse(localStorage.getItem("artiekels_aantal"));
+}
 var prijs = 0;
   
 
