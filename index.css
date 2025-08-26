@@ -52,7 +52,7 @@ div {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#beker {
+#Beker {
     position: fixed;
     bottom: 4%;
     left: 3%;
@@ -67,4 +67,5 @@ div {
     font-size: 20px;
     border-radius: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
