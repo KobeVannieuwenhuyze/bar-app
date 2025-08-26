@@ -1,8 +1,8 @@
 const pagina = document.body.id;
 
-const artiekels_prijs = { 'bockor': 3, 'carlsberg': 3, 'omer': 5, 'duvel': 5, 'ypra': 5, 'ypra00': 5, 'kriek': 3, 'rouge': 5, 'cola': 3, 'colazero': 3, 'fanta': 3, 'icetea': 3, 'platwater': 2, 'spuitwater': 2, 'witglas': 5, 'roseglas': 5, 'roodglas': 5, 'witfles': 18, 'rosefles': 18, 'roodfles': 18, 'cavaglas': 6, 'cavafles': 22, 'chips': 2, 'beker/glas': 1, 'beker': -1 };
+const artiekels_prijs = { 'Pils': 3, 'KanPils': 3, 'Carlsberg00': 5, 'KriekMAX': 5, 'FramboiseMAX': 5, 'RougeMAX': 5, 'Duvel': 3, 'Omer': 5, 'Ypra04': 3, 'Kwaremont': 3, 'Blauw': 3, 'Ypra': 3, 'VDGroodbruin': 2, 'Martha': 2, 'Wittewijn': 5, 'Rosewijn': 5, 'Rodewijn': 5, 'Witfles': 18, 'Rosefles': 18, 'Roodfles': 18, 'Cava': 6, 'Cavafles': 22, 'Cola': 0, 'ColaZero': 0, 'Fanta': 0, 'Icetea': 0, 'Fruitsap': 0, 'Platwater': 0, 'Spuitwater': 0, 'Koffie': 0, 'Chips': 0, 'NieuweBeker': 1, 'VuileKan': 5, 'Beker': -1 };
 
-var artiekels_aantal = { 'bockor': 0, 'carlsberg': 0, 'omer': 0, 'duvel': 0, 'ypra': 0, 'ypra00': 0, 'kriek': 0, 'rouge': 0, 'cola': 0, 'colazero': 0, 'fanta': 0, 'icetea': 0, 'platwater': 0, 'spuitwater': 0, 'witglas': 0, 'roseglas': 0, 'roodglas': 0, 'witfles': 0, 'rosefles': 0, 'roodfles': 0, 'cavaglas': 0, 'cavafles': 0, 'chips': 0, 'beker/glas': 0, 'beker': 0 };
+var artiekels_aantal = { 'Pils': 0, 'KanPils': 0, 'Carlsberg00': 0, 'KriekMAX': 0, 'FramboiseMAX': 0, 'RougeMAX': 0, 'Duvel': 0, 'Omer': 0, 'Ypra04': 0, 'Kwaremont': 0, 'Blauw': 0, 'Ypra': 0, 'VDGroodbruin': 0, 'Martha': 0, 'Wittewijn': 0, 'Rosewijn': 0, 'Rodewijn': 0, 'Witfles': 0, 'Rosefles': 0, 'Roodfles': 0, 'Cava': 0, 'Cavafles': 0, 'Cola': 0, 'ColaZero': 0, 'Fanta': 0, 'Icetea': 0, 'Fruitsap': 0, 'Platwater': 0, 'Spuitwater': 0, 'Koffie': 0, 'Chips': 0, 'NieuweBeker': 0, 'VuileKan': 0, 'Beker': 0 };
 try{
 if (JSON.stringify(Object.keys(artiekels_aantal).sort()) === JSON.stringify(Object.keys(JSON.parse(localStorage.getItem("artiekels_aantal"))).sort()))
 {
@@ -20,85 +20,110 @@ var prijs = 0;
 
 if (pagina === "index") {  
     // Verschillende artiekelen
-const bockor = document.getElementById("bockor");
-const carlsberg = document.getElementById("carlsberg");
-const omer = document.getElementById("omer");
-const duvel = document.getElementById("duvel");
-const ypra = document.getElementById("ypra");
-const ypra00 = document.getElementById("ypra00");
-const kriek = document.getElementById("kriek");
-const rouge = document.getElementById("rouge");
-const cola = document.getElementById("cola");
-const colazero = document.getElementById("colazero");
-const fanta = document.getElementById("fanta");
-const acetea = document.getElementById("icetea");
-const platwater = document.getElementById("platwater");
-const spuitwater = document.getElementById("spuitwater");
-const witglas = document.getElementById("witglas");
-const roseglas = document.getElementById("roseglas");
-const roodglas = document.getElementById("roodglas");
-const witfles = document.getElementById("witfles");
-const rosefles = document.getElementById("rosefles");
-const roodfles = document.getElementById("roodfles");
-const cavaglas = document.getElementById("cavaglas");
-const cavafles = document.getElementById("cavafles");
-const chips = document.getElementById("chips");
-const nieuwebeker = document.getElementById("beker/glas");
-const beker = document.getElementById("beker");
+const Pils = document.getElementById("Pils");
+const KanPils = document.getElementById("KanPils");
+const Carlsberg00 = document.getElementById("Carlsberg00");
+const KriekMAX = document.getElementById("KriekMAX");
+const FramboiseMAX = document.getElementById("FramboiseMAX");
+const RougeMAX = document.getElementById("RougeMAX");
+const Duvel = document.getElementById("Duvel");
+const Omer = document.getElementById("Omer");
+const Ypra04 = document.getElementById("Ypra04");
+const Kwaremont = document.getElementById("Kwaremont");
+const Blauw = document.getElementById("Blauw");
+const Ypra = document.getElementById("Ypra");
+const VDGroodbruin = document.getElementById("VDGroodbruin");
+const Wittewijn = document.getElementById("Wittewijn");
+const Rosewijn = document.getElementById("Rosewijn");
+const Rodewijn = document.getElementById("Rodewijn");
+const Witfles = document.getElementById("Witfles");
+const Rosefles = document.getElementById("Rosefles");
+const Roodfles = document.getElementById("Roodfles");
+const Cava = document.getElementById("Cava");
+const Cavafles = document.getElementById("Cavafles");
+const Cola = document.getElementById("Cola");
+const ColaZero = document.getElementById("ColaZero");
+const Fanta = document.getElementById("Fanta");
+const Icetea = document.getElementById("Icetea");
+const Fruitsap = document.getElementById("Fruitsap");
+const Platwater = document.getElementById("Platwater");
+const Spuitwater = document.getElementById("Spuitwater");
+const Koffie = document.getElementById("Koffie");
+const Chips = document.getElementById("Chips");
+const NieuweBeker = document.getElementById("NieuweBeker");
+const VuileKan = document.getElementById("VuileKan");
+const Beker = document.getElementById("Beker");
 
 //Initialisatie van nummering
-initialisatie('bockor', bockor);
-initialisatie('carlsberg', carlsberg);
-initialisatie('omer', omer);
-initialisatie('duvel', duvel);
-initialisatie('ypra', ypra);
-initialisatie('ypra00', ypra00);
-initialisatie('kriek', kriek);
-initialisatie('rouge', rouge);
-initialisatie('cola', cola);
-initialisatie('colazero', colazero);
-initialisatie('fanta', fanta);
-initialisatie('icetea', icetea);
-initialisatie('platwater', platwater);
-initialisatie('spuitwater', spuitwater);
-initialisatie('witglas', witglas);
-initialisatie('roseglas', roseglas);
-initialisatie('roodglas', roodglas);
-initialisatie('witfles', witfles);
-initialisatie('rosefles', rosefles);
-initialisatie('roodfles', roodfles);
-initialisatie('cavaglas', cavaglas);
-initialisatie('cavafles', cavafles);
-initialisatie('chips', chips);
-initialisatie('beker/glas', nieuwebeker)
-initialisatie('beker', beker);
+initialisatie('Pils', Pils);
+initialisatie('PilsKan', PilsKan);
+initialisatie('Carlsberg00', Carlsberg00);
+initialisatie('KriekMAX', KriekMAX);
+initialisatie('FramboiseMAX', FramboiseMAX);
+initialisatie('RougeMAX', RougeMAX);
+initialisatie('Duvel', Duvel);
+initialisatie('Omer', Omer);
+initialisatie('Ypra04', Ypra04);
+initialisatie('Kwaremont', Kwaremont);
+initialisatie('Blauw', Blauw);
+initialisatie('Ypra', Ypra);
+initialisatie('VDGroodbruin', VDGroodbruin);
+initialisatie('Wittewijn', Wittewijn);
+initialisatie('Rosewijn', Rosewijn);
+initialisatie('Rodewijn', Rodewijn);
+initialisatie('Witfles', Witfles);
+initialisatie('Rosefles', Rosefles);
+initialisatie('Roodfles', Roodfles);
+initialisatie('Cava', Cava)
+initialisatie('Cavafles', Cavafles);
+initialisatie('Cola', Cola);
+initialisatie('ColaZero', ColaZero);
+initialisatie('Fanta', Fanta);
+initialisatie('Icetea', Icetea);
+initialisatie('Fruitsap', Fruitsap);
+initialisatie('Platwater', Platwater);
+initialisatie('Spuitwater', Spuitwater);
+initialisatie('Koffie', Koffie);
+initialisatie('Chips', Chips);
+initialisatie('NieuweBeker', NieuweBeker);
+initialisatie('VuileKan', VuileKan);
+initialisatie('Beker', Beker);
 
 // Werkend maken nummering
-nummering('bockor', bockor);
-nummering('carlsberg', carlsberg);
-nummering('omer', omer);
-nummering('duvel', duvel);
-nummering('ypra', ypra);
-nummering('ypra00', ypra00);
-nummering('kriek', kriek);
-nummering('rouge', rouge);
-nummering('cola', cola);
-nummering('colazero', colazero);
-nummering('fanta', fanta);
-nummering('icetea', icetea);
-nummering('platwater', platwater);
-nummering('spuitwater', spuitwater);
-nummering('witglas', witglas);
-nummering('roseglas', roseglas);
-nummering('roodglas', roodglas);
-nummering('witfles', witfles);
-nummering('rosefles', rosefles);
-nummering('roodfles', roodfles);
-nummering('cavaglas', cavaglas);
-nummering('cavafles', cavafles);
-nummering('chips', chips);
-nummering('beker/glas', nieuwebeker)
-nummering('beker', beker);
+nummering('Pils', Pils);
+nummering('PilsKan', PilsKan);
+nummering('Carlsberg00', Carlsberg00);
+nummering('KriekMAX', KriekMAX);
+nummering('FramboiseMAX', FramboiseMAX);
+nummering('RougeMAX', RougeMAX);
+nummering('Duvel', Duvel);
+nummering('Omer', Omer);
+nummering('Ypra04', Ypra04);
+nummering('Kwaremont', Kwaremont);
+nummering('Blauw', Blauw);
+nummering('Ypra', Ypra);
+nummering('VDGroodbruin', VDGroodbruin);
+nummering('Wittewijn', Wittewijn);
+nummering('Rosewijn', Rosewijn);
+nummering('Rodewijn', Rodewijn);
+nummering('Witfles', Witfles);
+nummering('Rosefles', Rosefles);
+nummering('Roodfles', Roodfles);
+nummering('Cava', Cava)
+nummering('Cavafles', Cavafles);
+nummering('Cola', Cola);
+nummering('ColaZero', ColaZero);
+nummering('Fanta', Fanta);
+nummering('Icetea', Icetea);
+nummering('Fruitsap', Fruitsap);
+nummering('Platwater', Platwater);
+nummering('Spuitwater', Spuitwater);
+nummering('Koffie', Koffie);
+nummering('Chips', Chips);
+nummering('NieuweBeker', NieuweBeker);
+nummering('VuileKan', VuileKan);
+nummering('Beker', Beker);
+
 
 // Code voor knop betalen
 const berekenen = document.getElementById("berekenen");
@@ -122,7 +147,7 @@ else if (pagina === "betalen") {
 // Overzichtslijst maken
 const main = document.getElementById('main');
 for (let label in artiekels_aantal) {
-    if (artiekels_aantal[label] != 0 && label != 'beker')
+    if (artiekels_aantal[label] != 0 && label != 'Beker')
     {
         let lijn = document.createElement("h4");
         lijn.innerHTML = artiekels_aantal[label] + ' x ' + label;
