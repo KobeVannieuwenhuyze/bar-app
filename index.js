@@ -91,7 +91,7 @@ initialisatie('Beker', Beker);
 
 // Werkend maken nummering
 nummering('Pils', Pils);
-nummering('PilsKan', PilsKan);
+nummering('KanPils', KanPils);
 nummering('Carlsberg00', Carlsberg00);
 nummering('KriekMAX', KriekMAX);
 nummering('FramboiseMAX', FramboiseMAX);
@@ -231,6 +231,7 @@ function initialisatie (soort, moederelement)
         moederelement.insertBefore(figurecaption, moederelement.children[0]);
     }
 }
+
 
 
 
