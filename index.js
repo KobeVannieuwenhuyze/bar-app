@@ -56,7 +56,7 @@ const Beker = document.getElementById("Beker");
 
 //Initialisatie van nummering
 initialisatie('Pils', Pils);
-initialisatie('PilsKan', PilsKan);
+initialisatie('KanPils', KanPils);
 initialisatie('Carlsberg00', Carlsberg00);
 initialisatie('KriekMAX', KriekMAX);
 initialisatie('FramboiseMAX', FramboiseMAX);
@@ -231,5 +231,6 @@ function initialisatie (soort, moederelement)
         moederelement.insertBefore(figurecaption, moederelement.children[0]);
     }
 }
+
 
 
