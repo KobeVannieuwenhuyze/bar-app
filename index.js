@@ -33,6 +33,7 @@ const Kwaremont = document.getElementById("Kwaremont");
 const Blauw = document.getElementById("Blauw");
 const Ypra = document.getElementById("Ypra");
 const VDGroodbruin = document.getElementById("VDGroodbruin");
+const Martha = document.getElementById("Martha");
 const Wittewijn = document.getElementById("Wittewijn");
 const Rosewijn = document.getElementById("Rosewijn");
 const Rodewijn = document.getElementById("Rodewijn");
@@ -68,6 +69,7 @@ initialisatie('Kwaremont', Kwaremont);
 initialisatie('Blauw', Blauw);
 initialisatie('Ypra', Ypra);
 initialisatie('VDGroodbruin', VDGroodbruin);
+initialisatie('Martha', Martha);
 initialisatie('Wittewijn', Wittewijn);
 initialisatie('Rosewijn', Rosewijn);
 initialisatie('Rodewijn', Rodewijn);
@@ -103,6 +105,7 @@ nummering('Kwaremont', Kwaremont);
 nummering('Blauw', Blauw);
 nummering('Ypra', Ypra);
 nummering('VDGroodbruin', VDGroodbruin);
+nummering('Martha', Martha);
 nummering('Wittewijn', Wittewijn);
 nummering('Rosewijn', Rosewijn);
 nummering('Rodewijn', Rodewijn);
@@ -231,6 +234,7 @@ function initialisatie (soort, moederelement)
         moederelement.insertBefore(figurecaption, moederelement.children[0]);
     }
 }
+
 
 
 
