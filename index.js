@@ -1,7 +1,7 @@
 const pagina = document.body.id;
 
 //const artiekels_prijs = { 'Pils': 3, 'KanPils': 17, 'Carlsberg00': 3, 'KriekMAX': 3, 'FramboiseMAX': 3, 'RougeMAX': 4, 'Duvel': 5, 'Omer': 5, 'Ypra04': 5, 'Kwaremont': 4, 'Blauw': 4, 'Ypra': 5, 'VDGroodbruin': 4, 'Martha': 5, 'Wittewijn': 4, 'Rosewijn': 4, 'Rodewijn': 4, 'Witfles': 15, 'Rosefles': 15, 'Roodfles': 15, 'Cava': 5, 'Cavafles': 20, 'Cola': 3, 'ColaZero': 3, 'Fanta': 3, 'Icetea': 3, 'Fruitsap': 3, 'Platwater': 2, 'Spuitwater': 2, 'Koffie': 3, 'Chips': 2, 'NieuweBeker': 1, 'VuileKan': -5, 'Beker': -1 };
-const artiekels_prijs = { 'Pils': 3, 'Omer': 5, 'Wittewijn': 4, 'Rosewijn': 4, 'Rodewijn Les Copains': 4, 'Rodewijn Amber Ash': 4, 'Witfles': 15, 'Rosefles': 15, 'Roodfles Les Copains': 15, 'Roodfles Amber Ash': 15, 'Cola': 3, 'ColaZero': 3, 'Fanta': 3, 'Fruitsap': 3, 'Platwater': 2, 'Spuitwater': 2};
+const artiekels_prijs = { 'Pils': 4, 'Omer': 8, 'Wittewijn': 7, 'Rosewijn': 7, 'Rodewijn Les Copains': 7, 'Rodewijn Amber Ash': 9, 'Witfles': 32, 'Rosefles': 32, 'Roodfles Les Copains': 32, 'Roodfles Amber Ash': 42, 'Cola': 4, 'ColaZero': 4, 'Fanta': 4, 'Fruitsap': 4, 'Platwater': 2, 'Spuitwater': 2};
 
 //var artiekels_aantal = { 'Pils': 0, 'KanPils': 0, 'Carlsberg00': 0, 'KriekMAX': 0, 'FramboiseMAX': 0, 'RougeMAX': 0, 'Duvel': 0, 'Omer': 0, 'Ypra04': 0, 'Kwaremont': 0, 'Blauw': 0, 'Ypra': 0, 'VDGroodbruin': 0, 'Martha': 0, 'Wittewijn': 0, 'Rosewijn': 0, 'Rodewijn': 0, 'Witfles': 0, 'Rosefles': 0, 'Roodfles': 0, 'Cava': 0, 'Cavafles': 0, 'Cola': 0, 'ColaZero': 0, 'Fanta': 0, 'Icetea': 0, 'Fruitsap': 0, 'Platwater': 0, 'Spuitwater': 0, 'Koffie': 0, 'Chips': 0, 'NieuweBeker': 0, 'VuileKan': 0, 'Beker': 0 };
 var artiekels_aantal = { 'Pils': 0, 'Omer': 0, 'Wittewijn': 0, 'Rosewijn': 0, 'Rodewijn Les Copains': 0, 'Rodewijn Amber Ash': 0, 'Witfles': 0, 'Rosefles': 0, 'Roodfles Les Copains': 0, 'Roodfles Amber Ash': 0, 'Cola': 0, 'ColaZero': 0, 'Fanta': 0, 'Fruitsap': 0, 'Platwater': 0, 'Spuitwater': 0};
@@ -243,6 +243,7 @@ function initialisatie (soort, moederelement)
         moederelement.insertBefore(figurecaption, moederelement.children[0]);
     }
 }
+
 
 
 
