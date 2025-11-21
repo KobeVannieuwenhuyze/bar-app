@@ -41,12 +41,12 @@ const Wittewijn = document.getElementById("Wittewijn");
 const Rosewijn = document.getElementById("Rosewijn");
 //const Rodewijn = document.getElementById("Rodewijn");
 const Rodewijn_Les_Copains = document.getElementById("Rodewijn_Les_Copains");
-const Rodewijn_Amber_Ash = document.getElementById("Rodewijn_Amber_Ach");
+const Rodewijn_Amber_Ash = document.getElementById("Rodewijn_Amber_Ash");
 const Witfles = document.getElementById("Witfles");
 const Rosefles = document.getElementById("Rosefles");
 //const Roodfles = document.getElementById("Roodfles");
 const Roodfles_Les_Copains = document.getElementById("Roodfles_Les_Copains");
-const Roodfles_Amber_Ash = document.getElementById("Roodfles_Amber_Ach");
+const Roodfles_Amber_Ash = document.getElementById("Roodfles_Amber_Ash");
 //const Cava = document.getElementById("Cava");
 //const Cavafles = document.getElementById("Cavafles");
 const Cola = document.getElementById("Cola");
@@ -81,11 +81,11 @@ initialisatie('Wittewijn', Wittewijn);
 initialisatie('Rosewijn', Rosewijn);
 //initialisatie('Rodewijn', Rodewijn);
 initialisatie('Rodewijn_Les_Copains', Rodewijn_Les_Copains);
-initialisatie('Rodewijn_Amber_Ach', Rodewijn_Amber_Ash);
+initialisatie('Rodewijn_Amber_Ash', Rodewijn_Amber_Ash);
 initialisatie('Witfles', Witfles);
 initialisatie('Rosefles', Rosefles);
 //initialisatie('Roodfles', Roodfles);
-initialisatie('Roodfles_Les_Copain', Roodfles_Les_Copains);
+initialisatie('Roodfles_Les_Copains', Roodfles_Les_Copains);
 initialisatie('Roodfles_Amber_Ash', Roodfles_Amber_Ash);
 //initialisatie('Cava', Cava)
 //initialisatie('Cavafles', Cavafles);
@@ -125,7 +125,7 @@ nummering('Rodewijn_Amber_Ash', Rodewijn_Amber_Ash);
 nummering('Witfles', Witfles);
 nummering('Rosefles', Rosefles);
 //nummering('Roodfles', Roodfles);
-nummering('Roodfles_Les_Copain', Roodfles_Les_Copains);
+nummering('Roodfles_Les_Copains', Roodfles_Les_Copains);
 nummering('Roodfles_Amber_Ash', Roodfles_Amber_Ash);
 //nummering('Cava', Cava)
 //nummering('Cavafles', Cavafles);
@@ -249,6 +249,7 @@ function initialisatie (soort, moederelement)
         moederelement.insertBefore(figurecaption, moederelement.children[0]);
     }
 }
+
 
 
 
