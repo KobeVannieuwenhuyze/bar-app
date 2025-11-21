@@ -39,10 +39,12 @@ const Omer = document.getElementById("Omer");
 //const Martha = document.getElementById("Martha");
 const Wittewijn = document.getElementById("Wittewijn");
 const Rosewijn = document.getElementById("Rosewijn");
+//const Rodewijn = document.getElementById("Rodewijn");
 const Rodewijn_Les_Copains = document.getElementById("Rodewijn Les Copains");
 const Rodewijn_Amber_Ash = document.getElementById("Rodewijn Amber Ach");
 const Witfles = document.getElementById("Witfles");
 const Rosefles = document.getElementById("Rosefles");
+//const Roodfles = document.getElementById("Roodfles");
 const Roodfles_Les_Copains = document.getElementById("Roodfles Les Copains");
 const Roodfles_Amber_Ash = document.getElementById("Roodfles Amber Ach");
 //const Cava = document.getElementById("Cava");
@@ -77,12 +79,14 @@ initialisatie('Omer', Omer);
 //initialisatie('Martha', Martha);
 initialisatie('Wittewijn', Wittewijn);
 initialisatie('Rosewijn', Rosewijn);
-initialisatie('Rodewijn', Rodewijn);
+//initialisatie('Rodewijn', Rodewijn);
 initialisatie('Rodewijn Les Copains', Rodewijn_Les_Copains);
+initialisatie('Rodewijn Amber Ach', Rodewijn_Amber_Ash);
 initialisatie('Witfles', Witfles);
 initialisatie('Rosefles', Rosefles);
-initialisatie('Roodfles', Roodfles);
+//initialisatie('Roodfles', Roodfles);
 initialisatie('Roodfles Les Copain', Roodfles_Les_Copains);
+initialisatie('Roodfles Amber Ash', Roodfles_Amber_Ash);
 //initialisatie('Cava', Cava)
 //initialisatie('Cavafles', Cavafles);
 initialisatie('Cola', Cola);
@@ -115,12 +119,14 @@ nummering('Omer', Omer);
 //nummering('Martha', Martha);
 nummering('Wittewijn', Wittewijn);
 nummering('Rosewijn', Rosewijn);
-nummering('Rodewijn', Rodewijn);
+//nummering('Rodewijn', Rodewijn);
 nummering('Rodewijn Les Copains', Rodewijn_Les_Copains);
+nummering('Rodewijn Amber Ash', Rodewijn_Amber_Ash);
 nummering('Witfles', Witfles);
 nummering('Rosefles', Rosefles);
-nummering('Roodfles', Roodfles);
+//nummering('Roodfles', Roodfles);
 nummering('Roodfles Les Copain', Roodfles_Les_Copains);
+nummering('Roodfles Amber Ash', Roodfles_Amber_Ash);
 //nummering('Cava', Cava)
 //nummering('Cavafles', Cavafles);
 nummering('Cola', Cola);
@@ -243,6 +249,7 @@ function initialisatie (soort, moederelement)
         moederelement.insertBefore(figurecaption, moederelement.children[0]);
     }
 }
+
 
 
 
