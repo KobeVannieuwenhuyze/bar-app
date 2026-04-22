@@ -98,7 +98,7 @@ initialisatie('Rosefles', Rosefles);
 //initialisatie('Roodfles_Amber_Ash', Roodfles_Amber_Ash);
 initialisatie('Cava', Cava)
 initialisatie('Cavafles', Cavafles);
-initialisatie('Aperol', Aperol);
+//initialisatie('Aperol', Aperol);
 initialisatie('Cola', Cola);
 initialisatie('ColaZero', ColaZero);
 initialisatie('Fanta', Fanta);
